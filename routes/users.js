@@ -113,9 +113,9 @@ router.post('/register', async (req, res) => {
         isAdmin: req.body.isAdmin,
         street: req.body.street,
         apartment: req.body.apartment,
-        zip: req.body.zip,
         city: req.body.city,
-        country: req.body.country
+        age: req.body.age
+ 
     });
     user = await user.save();
 
